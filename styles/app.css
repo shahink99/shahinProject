@@ -594,6 +594,7 @@ newsLetter section
     padding: 0 1.5rem;
     border-radius: 2rem;
     margin-top: 2rem;
+    display : flex;
 }
 .newsletter__form{
     height: 100%;
