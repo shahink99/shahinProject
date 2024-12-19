@@ -582,6 +582,24 @@ newsLetter section
   display: flex;
   flex-direction: column-reverse;
   margin: 6rem 0;
+ overflow: hidden;
+}
+.newsletter::before{
+  content :'';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -15rem;
+  right: 0;
+  width: 50rem;
+  height: 50rem;
+  background-size: contain;
+  background: url('../images/svgs/shape3.svg') no-repeat;
+
+}
+
+.newsletter__content,.newsletter__banner{
+  z-index: 2;
 }
 .newsletter__content {
 }
@@ -639,4 +657,104 @@ newsLetter section
 }
 .newsletter__img {
   width: 100%;
+}
+
+/* 
+
+*******************************
+
+Footer Left
+
+*******************************
+
+ */
+
+.footer__left {
+  max-width: 60rem;
+  margin-left: 1rem;
+  text-align: center;
+}
+.footer-content {
+  margin-bottom: 2rem;
+}
+.footer__title {
+  font-family: var(--secendrey-font);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  
+}
+.footer-content__description {
+}
+.footer-app {
+  display: none;
+}
+.footer-app-mobile{
+  display: block;
+  text-align: center;
+}
+.footer__title {
+}
+.footer-app__link {
+}
+.footer-app__img {
+}
+
+
+/* 
+
+*******************************
+
+Footer Right
+
+*******************************
+
+ */
+
+
+.footer__right{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+.footer-list{
+  width: 100%;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.footer-pages{}
+
+.footer-pages__item{}
+
+.footer-pages__link{
+  color: var(--dark);
+}
+.footer-pages__link:hover{
+  text-decoration: underline;
+}
+
+.footer__copy-right{
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.footer__scroll{
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  transition: all 300ms ease-in-out;
+
 }
