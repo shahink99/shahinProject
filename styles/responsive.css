@@ -142,8 +142,9 @@
 
 /*   footer */
 
-  .footer__left{
-    max-width: none;
+ .footer__left{
+    max-width: none;;
+  }
 }
 
 @media (min-width: 992px) {
