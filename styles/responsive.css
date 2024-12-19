@@ -139,6 +139,11 @@
   .menu {
     display: flex;
   }
+
+/*   footer */
+
+  .footer__wrapper{
+    max-width: none;
 }
 
 @media (min-width: 992px) {
